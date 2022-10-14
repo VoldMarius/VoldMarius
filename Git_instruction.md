@@ -45,3 +45,45 @@ $ git init
 
 
 Как только вы отредактируете (измените) файлы, Git будет рассматривать их как изменённые. Далее необходимо индексировать эти изменения, затем зафиксировать все проиндексированные изменения.
+
+ Пример
+--------
+В момент написания этого предложения мы внесли изменения в отслеживаемый файл - `Git_instruction.md`
+Выполним в терминале команду 
+```
+git status
+```
+результат будет следующим:
+```
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Git_instruction.md
+
+```
+Файл `Git_instruction.md` находится в секции «Changes not staged for commit» — это означает, что отслеживаемый файл был изменён в рабочем каталоге, но пока не проиндексирован. Чтобы проиндексировать его, необходимо выполнить команду:
+```
+ git add
+ ```
+ Это команда используется для для индексации изменений и добавления под версионный контроль новых файлов.  Таким образом мы добавляем наш новый контент в следующий коммит, но не как не добавляем текущий файл в проект.
+ Выполним:
+```
+git add
+```
+чтобы проиндексировать Git_instruction.md, а затем снова выполним:
+```
+git status
+```
+Результатом наших действий будет:
+```
+$ git add Git_instruction.md
+
+vladi@HOME-PC MINGW64 ~/Desktop/Git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Git_instruction.md
+```
+
