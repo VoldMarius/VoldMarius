@@ -87,4 +87,11 @@ Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         modified:   Git_instruction.md
 ```
+**Примечание**  *  
+Если вы изменили файл после выполнения команды  
+``` 
+git add
+```
+ вам придётся снова выполнить её, чтобы проиндексировать последнюю версию файла:
+
 
