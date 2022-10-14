@@ -262,3 +262,24 @@ a74b0c7 Переименовал файл и добавил пункт Нача�
  
 Пример
 --------
+```
+vladi@HOME-PC MINGW64 ~/Desktop/Git ((5f3e98c...))
+$ git checkout 43da38
+Warning: you are leaving 2 commits behind, not connected to
+any of your branches:
+
+  5f3e98c Окончание
+  60add3c Окончание
+
+If you want to keep them by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 5f3e98c
+
+HEAD is now at 43da380 Последний на пятницу
+D       instruction.md
+```
+Для возврата в главный (Головной) коммит вводим в терминале:
+```
+git checkout master
+```
