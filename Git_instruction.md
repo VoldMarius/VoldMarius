@@ -288,3 +288,5 @@ D       instruction.md
 ```
 git checkout master
 ```
+## 8. Ветвление в Git 
+
