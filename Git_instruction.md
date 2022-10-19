@@ -339,3 +339,17 @@ git checkout 8_paragraph_branching
 
 ![8_paragraph_branching.jpg](8_paragraph_branching.jpg)
 Чтобы новая ветка получила свой коммит зафиксируем наши изменения:
+```
+vladi@HOME-PC MINGW64 ~/Desktop/Git (8_paragraph_branching)
+$ git commit -a -m 'made a change'
+[8_paragraph_branching ce664b4] made a change
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+ ```
+![8_paragraph.jpg](8_paragraph.jpg)
+
+ Указатель HEAD  переместился вперёд после коммита и
+ указатель на ветку **8_paragraph_branching** переместился вперёд, а master указывает на тот же коммит, где и был до переключения веток командой git checkout. 
+ 
+Если переключитс назад на ветку master:
+
+![8__master.png](8_master.png)
