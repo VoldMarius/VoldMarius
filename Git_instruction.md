@@ -326,12 +326,16 @@ $ git branch 8_paragraph_branching
 ```
 
 
-
-
 Для переключения на созданную ветку необходимо выполнить команду *`git checkout`*. Давайте переключимся на новую  ветку 8_paragraph_branching:
 
 ```
 git checkout 8_paragraph_branching
 ```
 *Таким образом мы создали новую ветку **8_paragraph_branching**,
-а затем перешли на нее из текущей.*
+а затем перешли на нее из текущей. О чем нам показывает надпись в левом нижнем углу VS*   
+
+![Vs1](VS1.png)
+В результате указатель HEAD переместится на ветку **8_paragraph_branching**.
+
+![8_paragraph_branching.jpg](8_paragraph_branching.jpg)
+Чтобы новая ветка получила свой коммит зафиксируем наши изменения:
